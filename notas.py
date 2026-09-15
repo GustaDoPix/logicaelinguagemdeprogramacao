@@ -1,8 +1,15 @@
-nota1 = int(input("Digite a nota do 1° bimestre: "))
-nota2 = int(input("Digite a nota do 2° bimestre: "))
-nota3 = int(input("Digite a nota do 3° bimestre: "))
-nota4 = int(input("Digite a nota do 4° bimestre: "))
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+nota3 = float(input("Digite a terceira nota: "))
+nota4 = float(input("Digite a quarta nota: "))
 
-media = (nota1 + nota2 + nota3 + nota4)/4
+media = (nota1+nota2+nota3+nota4)/4
 
-print("A sua nota é: ", media)
+print(media)
+
+if media <= 3:
+    print("REPROVADO!")
+elif media <= 5:
+    print("RECUPERAÇAO")
+else:
+    print("APROVADO!")
